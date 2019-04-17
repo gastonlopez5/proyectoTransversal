@@ -101,7 +101,7 @@ public class CursadaData {
             Cursada cursada;
             while(resultSet.next()){
                 cursada = new Cursada();
-                cursada.setId(resultSet.getInt("id"));
+                cursada.setId(resultSet.getInt("idCursada"));
                 
                 Alumno a=buscarAlumno(resultSet.getInt("idAlumno"));
                 cursada.setAlumno(a);
